@@ -20,7 +20,7 @@ changes, critique, ask for more functionalities, and/or implore me to beautify t
    enter a color.
 8. Enter one of seven possible colors: red, orange, yellow, green, blue, indigo, violet. Case does not matter.
    The program will gather all persons with that color attribute and list them in the console output area.
-   Also, all those persons and their correponding attributes will be outputted to a file named "Sorted2.txt".
+   Also, all those persons and their corresponding attributes will be outputted to a file named "Sorted2.txt".
    
    
    **Note: You can click clear to close the file stream i.e. sever the connection between the program
@@ -28,4 +28,4 @@ changes, critique, ask for more functionalities, and/or implore me to beautify t
    
    Thank you for using this guide.
    
-   -Shiraz Chaudhry
+   #-Shiraz Chaudhry
