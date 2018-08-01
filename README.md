@@ -28,4 +28,4 @@ changes, critique, ask for more functionalities, and/or implore me to beautify t
    
    Thank you for using this guide.
    
-   #-Shiraz Chaudhry
+#-Shiraz Chaudhry
