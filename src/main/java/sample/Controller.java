@@ -79,16 +79,6 @@ public class Controller {
         System.out.println("Total members: " + count);
     }
 
-    public void ultimateParse(){
-
-        String entry = JOptionPane.showInputDialog("Enter one of the 7 colors of the spectrum, lower-case:");
-        for (Person p : persons){
-            if (entry.equals(p.getColor())) {
-
-            }
-        }
-    }
-
     public void parseR() {
         int count = 0;
         for (Person p : persons) {
