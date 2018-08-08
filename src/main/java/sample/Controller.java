@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.application.Platform;
+
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -182,7 +184,7 @@ public class Controller {
 
     public void exitApp() {
         System.out.println("    exit!");
-        System.exit(0);
+        Platform.exit();
     }
 
     public void randomColor() {
@@ -191,7 +193,6 @@ public class Controller {
         if (number == 0) {
             String randomColor = "RED";
             JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
-
             parseR();
         }
         else if (number == 1){
@@ -224,6 +225,5 @@ public class Controller {
             JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
             parseV();
         }
-
     }
 }
