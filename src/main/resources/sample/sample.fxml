@@ -16,11 +16,6 @@
               <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Exit" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#helpMsg" text="Instructions" />
@@ -29,5 +24,12 @@
         </menus>
       </MenuBar>
       <Button layoutX="28.0" layoutY="45.0" mnemonicParsing="false" onAction="#randomColor" text="Randomize Color" />
+      <Button layoutX="596.0" layoutY="104.0" mnemonicParsing="false" onAction="#parseR" text="Red" />
+      <Button layoutX="553.0" layoutY="148.0" mnemonicParsing="false" onAction="#parseO" text="Orange" />
+      <Button layoutX="512.0" layoutY="194.0" mnemonicParsing="false" onAction="#parseY" text="Yellow" />
+      <Button layoutX="461.0" layoutY="240.0" mnemonicParsing="false" onAction="#parseG" text="Green" />
+      <Button layoutX="512.0" layoutY="285.0" mnemonicParsing="false" onAction="#parseB" text="Blue" />
+      <Button layoutX="553.0" layoutY="345.0" mnemonicParsing="false" onAction="#parseI" text="Indigo" />
+      <Button layoutX="604.0" layoutY="398.0" mnemonicParsing="false" onAction="#parseV" text="Violet" />
    </children>
 </Pane>
