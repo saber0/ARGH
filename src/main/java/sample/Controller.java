@@ -17,7 +17,6 @@ public class Controller {
         try
 
         {
-
             Scanner sc = new Scanner(new File("/vnx1/home/shirazc/IdeaProjects/ARGH/color"));
             sc.useDelimiter("Date:|Name:|Company:|Color:");
             while (sc.hasNext()) {
@@ -130,7 +129,7 @@ public class Controller {
         System.out.println("Total number of members = " + count + ".\n");
     }
 
-    public void parseBlue() {
+    public void parseB() {
         int count = 0;
         for (Person p : persons) {
             String q = p.getColor();
@@ -190,25 +189,40 @@ public class Controller {
         Random randomNum = new Random();
         int number = randomNum.nextInt(7);
         if (number == 0) {
-            JOptionPane.showMessageDialog((Component)null, number+1 + " RED");
+            String randomColor = "RED";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+
+            parseR();
         }
         else if (number == 1){
-            JOptionPane.showMessageDialog((Component)null, number+1 +" ORANGE");
+            String randomColor = "ORANGE";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseO();
         }
         else if (number == 2){
-            JOptionPane.showMessageDialog((Component)null, number+1 +" YELLOW");
+            String randomColor = "YELLOW";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseY();
         }
         else if (number == 3){
-            JOptionPane.showMessageDialog((Component)null, number+1 +" GREEN");
+            String randomColor = "GREEN";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseG();
         }
         else if (number == 4){
-            JOptionPane.showMessageDialog((Component)null, number+1 +" BLUE");
+            String randomColor = "BLUE";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseB();
         }
         else if (number == 5){
-            JOptionPane.showMessageDialog((Component)null, number+1 +" INDIGO");
+            String randomColor = "INDIGO";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseI();
         }
         else {
-            JOptionPane.showMessageDialog((Component)null, number+1 +" VIOLET");
+            String randomColor = "VIOLET";
+            JOptionPane.showMessageDialog(null, number+1 + " " + randomColor);
+            parseV();
         }
 
     }
