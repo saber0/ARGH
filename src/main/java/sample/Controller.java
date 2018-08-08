@@ -41,7 +41,7 @@ public class Controller {
             e.printStackTrace();
 
         }
-
+        System.out.println("FILE READ.");
     }
 
     public void yetAnotherWay(){
