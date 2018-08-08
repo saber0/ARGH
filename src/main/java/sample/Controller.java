@@ -165,6 +165,7 @@ public class Controller {
     }
 
     public void helpMsg() {
+        System.out.println("I WORK");
         JOptionPane.showMessageDialog(null, "Step 1: Please go to File --> Open to load and display"
                 + " the full contents of the file.\n" +
                 "Step 2: Then, choose a color. All persons with that" +
