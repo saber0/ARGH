@@ -1,8 +1,10 @@
 package sample;
 
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -182,5 +184,32 @@ public class Controller {
     public void exitApp() {
         System.out.println("    exit!");
         System.exit(0);
+    }
+
+    public void randomColor() {
+        Random randomNum = new Random();
+        int number = randomNum.nextInt(7);
+        if (number == 0) {
+            JOptionPane.showMessageDialog((Component)null, number+1 + " RED");
+        }
+        else if (number == 1){
+            JOptionPane.showMessageDialog((Component)null, number+1 +" ORANGE");
+        }
+        else if (number == 2){
+            JOptionPane.showMessageDialog((Component)null, number+1 +" YELLOW");
+        }
+        else if (number == 3){
+            JOptionPane.showMessageDialog((Component)null, number+1 +" GREEN");
+        }
+        else if (number == 4){
+            JOptionPane.showMessageDialog((Component)null, number+1 +" BLUE");
+        }
+        else if (number == 5){
+            JOptionPane.showMessageDialog((Component)null, number+1 +" INDIGO");
+        }
+        else {
+            JOptionPane.showMessageDialog((Component)null, number+1 +" VIOLET");
+        }
+
     }
 }
