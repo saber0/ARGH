@@ -1,75 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Pane?>
 
-<GridPane alignment="center" hgap="10" prefHeight="291.0" prefWidth="1293.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <columnConstraints>
-      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
-      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
-      <ColumnConstraints maxWidth="793.0" minWidth="222.0" prefWidth="568.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <AnchorPane prefHeight="261.0" prefWidth="891.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <children>
-            <Button layoutX="138.0" layoutY="151.0" mnemonicParsing="false" onAction="#parseBlue" text="Blue" textFill="#196bcf">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="24.0" layoutY="47.0" mnemonicParsing="false" onAction="#parseR" text="Red" textFill="#d31414">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="35.0" layoutY="73.0" mnemonicParsing="false" onAction="#parseO" text="Orange" textFill="#e87800">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="57.0" layoutY="99.0" mnemonicParsing="false" onAction="#parseY" prefHeight="26.0" prefWidth="72.0" text="Yellow" textFill="#f8ff00">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="107.0" layoutY="125.0" mnemonicParsing="false" onAction="#parseG" text="Green" textFill="#00f765">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="157.0" layoutY="177.0" mnemonicParsing="false" onAction="#parseI" text="Indigo" textFill="#3f00f7">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <Button layoutX="179.0" layoutY="202.0" mnemonicParsing="false" onAction="#parseV" text="Violet" textFill="#dd1616">
-               <font>
-                  <Font name="System Bold Italic" size="13.0" />
-               </font></Button>
-            <MenuBar>
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#fileRead" text="Open" />
-                        <MenuItem mnemonicParsing="false" onAction="#clear" text="Clear" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" onAction="#helpMsg" text="Instructions" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <Button layoutX="17.0" layoutY="235.0" mnemonicParsing="false" onAction="#otherWay" text="Click me to type in a color." />
-         </children>
-      </AnchorPane>
+      <MenuBar layoutX="7.0" layoutY="6.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
-</GridPane>
+</Pane>

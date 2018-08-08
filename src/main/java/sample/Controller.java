@@ -174,9 +174,12 @@ public class Controller {
     }
 
     public void clear() {
-
         persons.clear();
         System.out.println("    clear!");
     }
 
+    public void exitApp() {
+        System.out.println("    exit!");
+        System.exit(0);
+    }
 }
