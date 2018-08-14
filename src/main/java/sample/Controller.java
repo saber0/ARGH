@@ -47,26 +47,17 @@ public class Controller {
         System.out.println("FILE READ.");
     }
 
-    public void yetAnotherWay(){
-        System.out.println(Arrays.asList(persons));
-        JOptionPane.showMessageDialog(null, Arrays.asList(persons));
-    }
-
-    public void otherWay() {
+    public void colorEntry() {
         String colorSelection = JOptionPane.showInputDialog("Enter one of the 7 colors of the spectrum:");
-
         PrintWriter outputFile = null;
-
         try
         {
             outputFile = new PrintWriter("Sorted2.txt");
         }
-
         catch (FileNotFoundException e)
         {
             e.printStackTrace();
         }
-
         int count = 0;
 
         for (Person p : persons)
@@ -76,9 +67,7 @@ public class Controller {
                 outputFile.print(p);
                 count++;
             }
-
             outputFile.close();
-
         System.out.println("Total members: " + count);
     }
 
@@ -90,7 +79,6 @@ public class Controller {
                 System.out.println(p);
                 count++;
             }
-
         }
         System.out.println("Total number of members = " + count + ".\n");
     }
