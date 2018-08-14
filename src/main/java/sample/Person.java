@@ -1,9 +1,28 @@
 package sample;
 
+import java.util.Objects;
+
 public class Person {
 
     private String date;
     private String name;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(date, person.date) &&
+            Objects.equals(name, person.name) &&
+            Objects.equals(company, person.company) &&
+            Objects.equals(color, person.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, name, company, color);
+    }
+
     private String company;
     private String color;
 
