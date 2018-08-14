@@ -6,7 +6,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="777.0" style="-fx-background-image: url('file:spectrum2.jpg');" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="777.0" style="-fx-background-image: url('file:spectrum2.jpg');" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <MenuBar layoutX="-6.0" layoutY="-1.0" prefHeight="29.0" prefWidth="785.0">
         <menus>
@@ -23,7 +23,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="322.0" layoutY="293.0" mnemonicParsing="false" onAction="#randomColor" text="Randomize Color" />
+      <Button layoutX="555.0" layoutY="362.0" mnemonicParsing="false" onAction="#randomColor" text="Randomize Color" />
       <Button layoutX="64.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseR" text="Red" />
       <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseO" text="Orange" />
       <Button layoutX="288.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseY" text="Yellow" />
@@ -31,5 +31,6 @@
       <Button layoutX="508.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseB" text="Blue" />
       <Button layoutX="602.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseI" text="Indigo" />
       <Button layoutX="694.0" layoutY="155.0" mnemonicParsing="false" onAction="#parseV" text="Violet" />
+      <Button layoutX="148.0" layoutY="362.0" mnemonicParsing="false" onAction="#colorEntry" prefHeight="26.0" prefWidth="129.0" text=" Enter a color!" />
    </children>
 </Pane>
